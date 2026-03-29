@@ -1,13 +1,19 @@
-189. Rotate Array
-Author: Chhavi
-Platform: LeetCode
-Difficulty: Medium
-Language: C++
+# 189. Rotate Array
 
-Problem
+**Author:** Chhavi
+**Platform:** LeetCode
+**Difficulty:** Medium
+**Language:** C++
+
+---
+
+## Problem
 We're given an integer array nums and we have to rotate it to the right by k steps, where k is non-negative.
 
-My Approach
+
+---
+
+## My Approach
 I used the three-reverse trick to rotate the array in-place without any extra space. The idea is:
 
 First, reverse the entire array.
@@ -16,7 +22,10 @@ Finally, reverse the remaining n - k elements.
 
 This works because reversing the whole array brings the last k elements to the front, but in reverse order. Reversing the two halves separately fixes their order. Also, I take k = k % n upfront to handle cases where k is larger than the array length.
 
-Code
+
+---
+
+## Code
 cppclass Solution {
 public:
     void rotate(vector<int>& nums, int k) {
@@ -28,7 +37,11 @@ public:
     }
 };
 
-Complexity
+---
+
+## Complexity
 
 Time: O(n)
 Space: O(1)
+
+![screenshot](chhavichoudhary_28-march-2026-day7-begin.png)

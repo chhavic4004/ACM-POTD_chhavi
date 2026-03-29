@@ -1,13 +1,17 @@
 1346. Check If N and Its Double Exist
-Author: Chhavi
-Platform: LeetCode
-Difficulty: Easy
-Language: C++
+**Author:** Chhavi
+**Platform:** LeetCode
+**Difficulty:** Easy
+**Language:** C++
 
-Problem
+---
+
+## Problem
 We're given an array of integers and we have to check if there exist two different indices i and j such that arr[i] == 2 * arr[j].
 
-My Approach
+---
+
+## My Approach
 I used a HashSet to store elements as I traverse the array. For each number, I check two things before inserting it:
 
 Is 2 * num already in the set? (current is the half, previous was the double)
@@ -15,7 +19,11 @@ Is num / 2 already in the set AND num is even? (current is the double, previous 
 
 If either condition is true, we found our pair. This way we handle both directions in a single pass without needing nested loops.
 
-Code
+
+---
+
+
+## Code
 cppclass Solution {
 public:
     bool checkIfExist(vector<int>& arr) {
@@ -30,7 +38,14 @@ public:
     }
 };
 
-Complexity
+
+---
+
+
+## Complexity
 
 Time: O(n)
 Space: O(n)
+
+
+![screenshot](chhavichoudhary_27-3-2026-day6-beginner.png)
