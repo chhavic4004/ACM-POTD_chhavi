@@ -67,3 +67,7 @@ public:
 **Time** :O(sz)
 **Space** :O(1)
 
+
+
+
+![screenshot](chhavichoudhary_29-3-2026-day8-intermediate.png)
